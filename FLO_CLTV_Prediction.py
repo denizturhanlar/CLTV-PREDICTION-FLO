@@ -231,7 +231,7 @@ cltv_df.groupby("cltv_segment").agg({"count","mean","sum"})
 cltv_df[["segment", "recency_cltv_weekly", "frequency", "monetary_cltv_avg"]].groupby("cltv_segment").agg(["mean", "count"]) #sadece belirli değişkenler için hesaplamaları istersek:
 
 ###############################################################
-# Scriptinin hazırlanması
+# Süreci fonksiyonlaştırılması
 ###############################################################
 
 def create_cltv_df(dataframe):
